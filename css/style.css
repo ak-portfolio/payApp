@@ -1,0 +1,886 @@
+/* CSS Document */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: '游ゴシック体', 'Yu Gothic', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro  W3', 'Kaushan Script', cursive , sans-serif;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: bottom;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  overflow: hidden;
+  list-style: none;
+}
+
+address{
+  font-style: normal;
+}
+
+.wrap{
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.scroll_box{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #e766a9;
+  z-index: 9999;
+}
+
+.scroll{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.scroll::before{
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transition: .2s;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(225deg);
+}
+
+.receive_Payments{
+  background-image: url("../img/rp_bg01.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 0 calc(50vw - 50%);
+  margin: 0 calc(50% - 50vw);
+}
+
+.receive_Payments:hover{
+  background-image: linear-gradient(90deg, rgba(231,102,169,.9), rgba(252,162,128,.9)), url("../img/rp_bg01.jpg");
+}
+
+header{
+  padding: 35px 0;
+  border-bottom: 1px solid rgba(255,255,255,.5);
+  overflow: hidden;
+}
+
+.header_logo{
+  float: left;
+}
+
+.header_logo h1{
+  display: inline-block;
+  font-family: 'ヒラギノ明朝 Pro';
+  font-size: 30px;
+  color: #fff;
+  line-height: 70px;
+  margin-left: 20px;
+}
+
+.nav_unshown{
+  display: none;
+}
+
+#nav_content{
+  float: right;
+}
+
+#nav_content ul li{
+  margin: 25px;
+  float: left;
+}
+
+#nav_content ul li a{
+  display: block;
+  color: #fff;
+  padding-bottom: 10px;
+  font-weight: bold;
+  border-bottom: 4px solid transparent;
+}
+
+#nav_content ul li a:hover{
+  border-bottom: 4px solid #fff;
+}
+
+.header_title{
+  padding: 40px 0;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.header_title img{
+  margin: 0 auto;
+}
+
+.header_title h2{
+  font-size: 60px;
+  padding: 20px 0;
+  font-family: 'Kaushan Script';
+}
+
+.header_title p{
+  font-size: 22px;
+  line-height: 2;
+}
+
+.header_main{
+  padding: 60px 0;
+}
+
+.header_main li{
+  width: calc(100% / 3);
+  text-align: center;
+  padding: 20px;
+  float: left;
+}
+
+.header_main li a{
+  font-size: 18px;
+  color: #fff;
+  padding: 20px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.header_main li a:hover{
+  background: #fff;
+  color: #e76dad;
+}
+
+.slick-dots{
+  bottom: 60px;
+}
+
+.slick-dots li button:before{
+  content: "";
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  opacity: .8;
+}
+
+.slick-dots li.slick-active button:before{
+  content: "";
+  background: #fff;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.slick-dotted.slick-slider{
+  margin: 0;
+}
+
+.kf_title{
+  text-align: center;
+  padding: 120px 0;
+}
+
+.kf_title h2{
+  font-size: 60px;
+  font-family: 'Kaushan Script';
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.kf_title h2::before{
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 440px;
+  width: 100%;
+  height: 30px;
+  background-color: #fca280; 
+  z-index: -1;
+}
+
+.kf_title p{
+  font-size: 18px;
+  color: #a3a2a2;
+  line-height: 2;
+}
+
+.kf_main li{
+  width: 50%;
+  padding-right: 80px;
+  margin-bottom: 60px;
+  float: left;
+}
+
+.kf_main li:nth-of-type(2n+1){
+  clear: both;
+}
+
+.kf_icon{
+  width: 100px;
+  text-align: center;
+  float: left;
+}
+
+
+.kf_text{
+  padding-left: 20px;
+  overflow: hidden;
+}
+
+.kf_text h3{
+  font-size: 24px;
+  font-family: 'ヒラギノ角ゴ StdN';
+  margin-bottom: 20px;
+}
+
+.kf_text p{
+  line-height: 2;
+}
+
+.advanced_Financial_CRM{
+  background: #f8f7f7;
+  padding: 0 calc(50vw - 50%);
+  margin: 0 calc(50% - 50vw);
+  text-align: center;
+}
+
+.advanced_Financial_CRM h2{
+  font-size: 60px;
+  font-family: 'Kaushan Script';
+  padding: 120px 0;
+}
+
+.afc_main{
+  width: 100%;
+  position: relative;
+}
+.ipad{
+  border-bottom: 2px solid #d0cfcf;
+}
+
+.pen{
+  position: absolute;
+  top: 160px;
+  right: -30px;
+}
+.afc_sub{
+  padding: 120px 0;
+}
+
+.afc_sub li{
+  width: calc(100% / 3);
+  float: left;
+  text-align: center;
+}
+
+.afc_sub h3{
+  font-size: 24px;
+  font-family: 'ヒラギノ角ゴ StdN';
+  margin-bottom: 30px;
+  z-index: 1;
+  position: relative;
+}
+
+.afc_sub h3::before{
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 12px;
+  background-color: transparent; 
+  z-index: -1;
+}
+
+.afc_sub h3:hover::before{
+  background-color: #fca280; 
+}
+
+.afc_sub p{
+  font-size: 18px;
+  line-height: 2;
+  font-family: 'ヒラギノ明朝 Pro';
+}
+
+.afa_title{
+  padding: 120px 0;
+  text-align: center;
+}
+
+.afa_title h2{
+  font-size: 60px;
+  font-family: 'Kaushan Script';
+  margin-bottom: 100px;
+}
+
+.afa_title p{
+  font-size: 24px;
+  line-height: 2;
+  font-family: 'ヒラギノ明朝 Pro';
+}
+
+.afa_main li{
+  width: calc(100% / 3 - 60px);
+  float: left;
+}
+
+.afa_main li:nth-of-type(even){
+  margin: 0 90px;
+}
+
+.afa_main li:last-of-type{
+  float: right;
+}
+
+
+.afa_main li a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  color: #dfdfdf;
+  text-align: center;
+  border: 2px solid #dfdfdf;
+}
+
+.afa_main li a:hover{
+  border: 2px solid #e862a7;
+}
+
+.afa_img{
+  padding: 40px 0;
+}
+
+.month{
+  color: #000;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.afa_text{
+  font-family: 'ヒラギノ明朝 Pro';
+  padding-top: 60px;
+  line-height: 2;
+}
+
+.afa_text span{
+  color: #000;
+}
+
+
+.afa_sub{
+  margin: 70px 0;
+}
+.afa_link{
+  width: 300px;
+  padding: 30px 0;
+  line-height: 50px;
+  margin: 0 auto 40px;
+  position: relative;
+}
+
+.afa_link a{
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #e766a9;
+  text-align: center;
+  background: #fff;
+  border: 4px solid #e766a9;
+  border-radius: 60px;
+  transition: all .4s;
+}
+
+.afa_link a:hover{
+  background: #e766a9;
+  color: #fff;
+}
+
+.afa_sub p{
+  font-size: 18px;
+  line-height: 2;
+  text-align: center;
+  font-family: 'ヒラギノ明朝 Pro';
+}
+
+footer{
+  background: #000;
+  padding: 70px calc(50vw - 50%);
+  margin: 0 calc(50% - 50vw);
+  color: #fff;
+  font-family: 'ヒラギノ明朝 Pro';
+}
+
+.f_content{
+  width: 50%;
+  float: left;
+}
+
+.f_content:last-of-type{
+  float: right;
+}
+
+.footer_logo{
+  margin-bottom: 40px;
+}
+
+.footer_logo h1{
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 70px;
+  margin-left: 60px;
+}
+
+footer address a{
+  display: block;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+footer address a span{
+  font-weight: bold;
+}
+
+.footer_menu{
+  margin-right: 50px;
+  border-bottom: 4px solid #858585;
+}
+
+.footer_menu li{
+  padding: 35px 0 50px;
+  padding-right: 15px;
+  float: left;
+  text-align: left;
+}
+
+.footer_menu li:last-of-type{
+  padding-right: 0;
+}
+
+.footer_menu li a{
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer_menu li a:hover{
+  color: #858585;
+}
+
+.f_content p{
+  font-size: 14px;
+  color: #858585;
+  font-weight: bold;
+  line-height: 2;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1024px){
+  .br_pc{
+    display: none;
+  }
+  
+  .wrap{
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  
+  .receive_Payments:hover{
+    background-image: url("../img/rp_bg01.jpg");
+  }
+  
+  .header_logo h1{
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  #nav_content ul li{
+    margin: 5px;
+  }
+  
+  #nav_content ul li:nth-of-type(3n+1){
+    clear: both;
+  }
+  
+  #nav_content img{
+    margin: 0 20px;
+  }
+  
+  .header_main ul li{
+    width: 100%;
+    margin-bottom: 20px;
+    float: none;
+  }
+  
+  .header_main li a{
+    background: #fff;
+    color: #e76dad;
+    padding: 20px 40px;
+  }
+  
+  #nav_content ul li a:hover{
+    border-bottom: 4px solid transparent;
+  }
+  
+  .kf_main li{
+    padding-right: 0;
+  }
+  
+  .ipad img{
+    width: 60vw; 
+    margin: 0 auto;
+  }
+  
+  .pen{
+    width: 40vw;
+    top: 10vw;
+    right: 4vw;
+  }
+  .afc_sub li{
+    padding: 0 20px;
+  }
+  
+  .afc_sub h3::before{
+    width: 100%;
+    background-color: #fca280; 
+  }
+  
+  .afa_main li{
+    width: calc(100% / 3 - 20px);
+  }
+  
+  .afa_main li:nth-of-type(even){
+    margin: 0 30px;
+  }
+  
+  .afa_main li a:hover {
+    border: 2px solid #dfdfdf;
+  }
+  
+  .afa_main li a{
+    padding: 40px 10px;
+  }
+  
+  .afa_link a:hover{
+    background: #fff;
+    color: #e766a9;
+  }
+  
+  .footer_menu{
+    margin: 0;
+  }
+  
+  .footer_menu li{
+    width: calc(100% / 3);
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    border: none;
+  }
+  
+  .f_content{
+    padding: 0 10px;
+  }
+  
+  .footer_logo h1{
+    margin-left: 30px;
+  }
+  
+  .footer_menu li:first-of-type{
+    text-align: center;
+  }
+  
+  .footer_menu li:nth-of-type(3n+1){
+    clear: both;
+  }
+  
+  .footer_menu li a:hover{
+    color: #fff;
+  }
+  
+}
+
+@media screen and (max-width: 640px){
+
+  header{
+    padding: 20px 0;
+  }
+  
+  .header_logo h1{
+    margin-left: 20px;
+  }
+  
+  #nav_drawer{
+    position: relative;
+  }
+  
+  #nav_open{
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/rp_icon_sp.png");
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+    right: 0;
+  }
+  
+  #nav_close{
+    display: none;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0;
+    transition: .3s;
+  }
+  
+  #nav_content{
+    position: fixed;
+    z-index: 9999;
+    width: 90%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: .3s;
+    transform: translateX(-105%);
+    background: #fca280;
+  }
+  
+  #nav_input:checked ~ #nav_close{
+    display: block;
+    opacity: .5;
+  }
+  
+  #nav_input:checked ~ #nav_content{
+    transform: translateX(0%);
+  }
+  
+  #nav_content ul{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+  
+  #nav_content ul li{
+    width: 100%;
+    line-height: 100px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #nav_content ul li:nth-of-type(n+4){
+    width: 50%;
+    float: left;
+    border-right: 1px solid #fff;
+  }
+  
+  #nav_content ul li:last-of-type{
+    border-right: none;
+  }
+  
+  #nav_content ul li a{
+    padding: 0 20px;
+    border-bottom: 1px solid #fff;
+  }
+  
+  #nav_content ul li a:hover{
+    border-bottom: 1px solid #fff;
+  }
+  
+  #nav_content img{ 
+    vertical-align: middle;
+  }
+  
+  .header_title h2{
+    font-size: 48px;
+  }
+  
+  .header_title p{
+    font-size: 18px;
+    line-height: normal;
+  }
+  
+  .header_main{
+    padding: 40px 0;
+  }
+  
+  .header_main li a{
+  padding: 20px 10px;
+}
+
+  .kf_title{
+   padding: 60px 0;
+  }
+  
+  .kf_title h2{
+    font-size: 48px;
+  }
+  
+  .kf_title h2::before{
+    width: 100%;
+    height: 15px;
+  }
+  
+  .kf_title p{
+    line-height: normal;
+  }
+  
+  .kf_main li{
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+    float: none;
+  }
+  
+  .kf_icon{
+    margin: 0 auto 20px;
+    float: none;
+  }
+  
+  .kf_text h3{
+    margin-bottom: 10px;
+  }
+  
+  .kf_text p{
+    line-height: normal;
+  }
+  
+  .advanced_Financial_CRM h2{
+    font-size: 48px;
+    padding: 60px 0;
+  }
+  
+  .pen{
+    right: 0;
+  }
+  
+  .afc_sub{
+    padding: 60px 0;
+  }
+  
+  .afc_sub li{
+    width: 100%;
+    float: none;
+  }
+  
+  .afc_sub h3{
+    margin-bottom: 10px;
+  }
+  
+  .afc_sub p{
+    font-size: 16px;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+  
+  .afa_title{
+    padding: 60px 0;
+  }
+  
+  .afa_title h2{
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+  
+  .afa_title p{
+    font-size: 18px;
+    line-height: normal;
+  }
+  
+  .afa_main li,.afa_main li:last-of-type{
+    width: 80%;
+    margin: 0 auto 40px;
+    float: none;
+  }
+  
+  .afa_main li:nth-of-type(even){
+    margin: 0 auto 40px;
+  }
+  
+  .afa_main li a{
+    padding: 20px 40px;
+  }
+  
+  .afa_img{
+    padding: 20px 0;
+  }
+  
+  .month{
+    padding-bottom: 20px;
+  }
+  
+  .afa_text{
+    padding-top: 20px;
+    line-height: normal;
+  }
+  
+  .afa_sub{
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  
+  .afa_link{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .afa_sub p{
+    line-height: normal;
+  }
+  
+  footer{
+    padding: 40px calc(50vw - 50%);
+  }
+  
+  .f_content,.f_content:last-of-type{
+    width: 100%;
+    padding: 0;
+    float: none;
+  }
+  
+  .footer_logo h1{
+    margin-left: 20px;
+  }
+  
+  footer address{
+    margin-bottom: 40px;
+  }
+  
+  .footer_menu li{
+    text-align: left;
+  }
+  
+  .footer_menu li:first-of-type{
+    text-align: left;
+  }
+  
+  .f_content p{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: normal;
+  }
+}
